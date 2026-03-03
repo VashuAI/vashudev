@@ -3,295 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO primary -->
-  <title>Vashudev Vishwas – WordPress Plugin Dev | Linux & Cloud Engineer</title>
-  <meta name="description" content="Vashudev Vishwas: 3+ years building custom WordPress plugins, ERP, WooCommerce, Linux Ubuntu servers, Docker deployment, Nextcloud, and scalable cloud infrastructure. Performance driven, secure, and automation-focused.">
-  <meta name="keywords" content="Vashudev Vishwas, WordPress Plugin Developer, PHP Developer, Linux Ubuntu Server, Docker, Nextcloud Setup, WooCommerce Expert, Cloud Engineer India, ERP systems, SMS automation, cPanel, AWS">
+  <title>Vashudev Vishwas – WordPress plugin & cloud engineer</title>
+  <meta name="description" content="Vashudev Vishwas: 3+ years building WordPress plugins, ERP, WooCommerce, Linux Ubuntu, Docker, Nextcloud. Clean architecture, performance, automation.">
+  <meta name="keywords" content="Vashudev Vishwas, WordPress Plugin Developer, PHP, Linux Ubuntu, Docker, Nextcloud, WooCommerce, Cloud Engineer">
   <meta name="author" content="Vashudev Vishwas">
   <meta name="robots" content="index, follow">
-  <!-- Open Graph for social -->
-  <meta property="og:title" content="Vashudev Vishwas – Plugin Dev & Cloud Engineer">
-  <meta property="og:description" content="Custom WordPress plugins, WooCommerce, Linux, Docker, Nextcloud. 3+ years of scalable solutions.">
+  <!-- Open Graph minimal -->
+  <meta property="og:title" content="Vashudev Vishwas – plugin dev & cloud">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vashudev.github.io/portfolio">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Vashudev+Vishwas">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://vashudev.github.io">
   <style>
+    /* ----- 2050 inspired – pure minimalism, soft contrast, airy ----- */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
-    /* modern calm palette with depth */
     body {
-      background: #f4f7fc;
-      background-image: radial-gradient(circle at 10% 20%, rgba(220, 240, 255, 0.4) 0%, transparent 30%),
-                      radial-gradient(circle at 90% 70%, rgba(200, 220, 250, 0.3) 0%, transparent 35%);
-      color: #1a2639;
+      background-color: #f3f5f8;   /* quiet silver background */
+      color: #1b2b40;               /* deep ink but soft */
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
       line-height: 1.5;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 3rem 2rem;
+      padding: 4rem 2rem;
     }
 
-    /* header area */
-    .name-title h1 {
-      font-size: 3.8rem;
-      font-weight: 700;
+    /* typography – pure, no gradient, no heavy decoration */
+    h1 {
+      font-size: 4rem;
+      font-weight: 500;
       letter-spacing: -0.02em;
-      background: linear-gradient(145deg, #1e2b4f, #2c3e6e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #0e2237;
       line-height: 1.1;
+      margin-bottom: 0.4rem;
     }
 
     .typing-row {
-      font-size: 1.8rem;
-      font-weight: 500;
-      color: #2c3e6e;
-      border-left: 5px solid #3b6ea5;
-      padding-left: 1.5rem;
-      margin: 1.2rem 0 1.5rem 0;
+      font-size: 1.6rem;
+      font-weight: 350;
+      color: #3a5670;
       min-height: 4rem;
-      background: linear-gradient(90deg, rgba(59, 110, 165, 0.03), transparent);
+      margin: 0.5rem 0 1.8rem 0;
+      border-bottom: 1px solid #cad5e0;
+      padding-bottom: 1.2rem;
+      width: fit-content;
+      max-width: 100%;
     }
 
     .lead-description {
       font-size: 1.3rem;
-      max-width: 880px;
-      color: #2a3b5a;
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(4px);
-      padding: 1.5rem 2rem;
-      border-radius: 30px;
-      box-shadow: 0 15px 30px -15px rgba(0,40,80,0.2);
-      margin: 2rem 0 2.5rem 0;
-      border: 1px solid rgba(255,255,255,0.8);
+      color: #1f344a;
+      background: transparent;
+      padding: 0 0 1.8rem 0;
+      margin: 1.5rem 0 2.5rem 0;
+      border-bottom: 1px solid #d0dceb;
+      max-width: 920px;
+      font-weight: 350;
+      letter-spacing: 0.01em;
     }
 
-    /* section style */
+    /* section headers – quiet & structured */
     .section-title {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: #162b40;
-      margin: 4rem 0 2rem 0;
-      position: relative;
-    }
-    .section-title::after {
-      content: '';
-      display: block;
-      width: 80px;
-      height: 4px;
-      background: #3b6ea5;
-      border-radius: 4px;
-      margin-top: 8px;
+      font-size: 2rem;
+      font-weight: 430;
+      color: #142b3c;
+      margin: 4.5rem 0 2rem 0;
+      border-bottom: 1px solid #bcc9d8;
+      padding-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
 
-    /* grid cards – expertise */
+    /* core expertise – minimal cards with very light border */
     .grid-expertise {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 2rem 2rem;
       margin-top: 2rem;
     }
 
     .expert-card {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      border-radius: 28px;
+      background: #ffffffd9;         /* barely there white */
+      backdrop-filter: none;
+      border: 1px solid #e2e9f2;
+      border-radius: 0px;            /* sharp – 2050 no roundness */
       padding: 2rem 1.8rem;
-      box-shadow: 0 20px 35px -12px rgba(0, 35, 65, 0.15);
-      transition: all 0.25s ease;
-      border: 1px solid rgba(255,255,255,0.8);
-    }
-    .expert-card:hover {
-      transform: translateY(-10px);
-      background: white;
-      box-shadow: 0 30px 45px -12px #1e3b5b30;
-      border-color: #b6d0e8;
-    }
-    .expert-card h3 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #1f3a5f;
-      margin-bottom: 1rem;
-    }
-    .expert-card p {
-      color: #2e405b;
-      font-size: 1.1rem;
+      transition: border 0.15s ease;
+      box-shadow: none;
     }
 
-    /* projects – detailed cards */
+    .expert-card:hover {
+      border: 1px solid #7f9aba;     /* only border changes */
+      background: white;
+    }
+
+    .expert-card h3 {
+      font-size: 1.6rem;
+      font-weight: 440;
+      color: #1a334b;
+      margin-bottom: 1rem;
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .expert-card p {
+      color: #2e425b;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      font-weight: 350;
+    }
+
+    /* project cards – extremely light, border-only interaction */
     .project-list {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-    }
-    .project-card {
-      background: white;
-      border-radius: 32px;
-      padding: 2rem 2.2rem;
-      box-shadow: 0 12px 30px -12px #0b263f30;
-      transition: 0.2s;
-      border-left: 8px solid #3b6ea5;
-    }
-    .project-card:hover {
-      box-shadow: 0 25px 40px -14px #10345660;
-      scale: 1.01;
-    }
-    .project-card h3 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #103456;
-      margin-bottom: 0.8rem;
-    }
-    .project-card p {
-      font-size: 1.2rem;
-      color: #2c3d55;
-      max-width: 900px;
+      gap: 0.1rem;   /* seamless separation */
     }
 
-    /* footer / contact */
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e2e9f2;
+      border-radius: 0px;
+      padding: 2rem 2rem;
+      transition: border 0.15s ease;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-card:hover {
+      border: 1px solid #7f9aba;
+      background: #ffffff;
+    }
+
+    .project-card h3 {
+      font-size: 1.9rem;
+      font-weight: 450;
+      color: #122c41;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .project-card p {
+      font-size: 1.15rem;
+      color: #2d4057;
+      max-width: 900px;
+      font-weight: 350;
+    }
+
+    /* footer – minimal separating line */
     .footer-block {
       margin-top: 5rem;
-      padding: 2.5rem 0;
-      border-top: 2px solid rgba(59, 110, 165, 0.2);
+      padding: 2rem 0 1rem 0;
+      border-top: 1px solid #cbd7e6;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      font-size: 1.2rem;
-      color: #162b40;
+      font-size: 1.1rem;
+      color: #1d3851;
     }
+
     .footer-links a {
-      color: #1f4973;
+      color: #2f4b70;
       text-decoration: none;
-      font-weight: 500;
-      border-bottom: 2px solid transparent;
-      transition: 0.2s;
-      margin: 0 0.8rem;
+      border-bottom: 1px solid transparent;
+      margin: 0 0 0 2rem;
+      font-weight: 380;
+      transition: border-color 0.2s;
     }
+
     .footer-links a:hover {
-      border-bottom-color: #3b6ea5;
+      border-bottom: 1px solid #7f9aba;
     }
+
+    .contact a {
+      color: #2f4b70;
+      text-decoration: none;
+      border-bottom: 1px solid #d0dceb;
+    }
+    .contact a:hover {
+      border-bottom: 1px solid #1d3851;
+    }
+
     .copyright {
-      font-size: 1rem;
-      opacity: 0.8;
+      font-size: 0.95rem;
+      color: #5f738d;
+      font-weight: 330;
     }
 
-    /* responsive */
-    @media (max-width: 600px) {
-      .name-title h1 { font-size: 2.8rem; }
-      .typing-row { font-size: 1.4rem; }
-      .lead-description { font-size: 1.1rem; }
-      .section-title { font-size: 2rem; }
-    }
-
-    /* small typing cursor effect */
+    /* typing cursor – subtle */
     #typing::after {
       content: '|';
-      animation: blink 1s step-end infinite;
-      margin-left: 4px;
-      color: #3b6ea5;
-      font-weight: 400;
+      animation: blink 1.1s step-end infinite;
+      margin-left: 3px;
+      font-weight: 300;
+      color: #6a7f9b;
     }
     @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+
+    /* responsiveness */
+    @media (max-width: 600px) {
+      h1 { font-size: 3rem; }
+      .typing-row { font-size: 1.3rem; }
+      .lead-description { font-size: 1.15rem; }
+      .footer-block { flex-direction: column; align-items: start; gap: 1rem; }
+      .footer-links a { margin-left: 0; margin-right: 1.5rem; }
+    }
+
+    /* remove all icons / emojis — you wanted no icon, so no decorative emojis at all */
+    /* i stripped every single emoji / symbol from titles and cards */
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- header + dynamic roles -->
-    <div class="name-title">
-      <h1>Vashudev Vishwas</h1>
-    </div>
+    <!-- name + dynamic role line -->
+    <h1>Vashudev Vishwas</h1>
     <div class="typing-row" id="typing"></div>
 
     <p class="lead-description">
-      ⚡ WordPress Plugin Developer & PHP Engineer with 3+ years of experience building scalable ERP systems, 
-      WooCommerce customizations, Linux Ubuntu servers, Docker deployments, Nextcloud, and secure automation. 
-      I bridge deep backend logic with cloud infrastructure.
+      WordPress plugin developer and PHP engineer with 3+ years building ERP systems,
+      WooCommerce customizations, Linux Ubuntu servers, Docker deployments, Nextcloud,
+      and cloud automation. Focus on maintainable code and quiet infrastructure.
     </p>
 
-    <!-- Core expertise section (detailed) -->
-    <div class="section-title">🧠 core engineering mastery</div>
+    <!-- core expertise (section with no icons, only text) -->
+    <div class="section-title">Core engineering</div>
     <div class="grid-expertise">
       <div class="expert-card">
-        <h3>🔌 plugin architecture</h3>
-        <p>Custom WordPress plugins: ERP modules (invoicing, inventory), SMS/WhatsApp automation, REST API endpoints, background jobs, role managers — reducing manual work by 50%+.</p>
+        <h3>Plugin architecture</h3>
+        <p>Custom WordPress plugins – ERP modules (invoicing, inventory), SMS/WhatsApp automation, REST API endpoints, background jobs, role managers. Manual work reduced by 50%+.</p>
       </div>
       <div class="expert-card">
-        <h3>🛒 WooCommerce deep-dive</h3>
-        <p>Dynamic pricing, conditional checkout logic, custom product templates, payment gateway tweaks, cart rules and conversion-focused optimizations (25%+ lift for clients).</p>
+        <h3>WooCommerce deep-dive</h3>
+        <p>Dynamic pricing, conditional checkout, custom product templates, payment tweaks, cart rules. Conversion uplift 25%+ for clients.</p>
       </div>
       <div class="expert-card">
-        <h3>🐧 linux & server hardening</h3>
-        <p>Ubuntu server (20.04/22.04) configuration: Nginx/Apache, virtual hosts, SSL (Let's Encrypt), SSH hardening, fail2ban, automated backups, DNS & VM provisioning.</p>
+        <h3>Linux & server hardening</h3>
+        <p>Ubuntu 20.04/22.04 – Nginx/Apache, virtual hosts, SSL (Let's Encrypt), SSH hardening, fail2ban, automated backups, DNS, VM provisioning.</p>
       </div>
       <div class="expert-card">
-        <h3>🐳 docker & cloud deploy</h3>
-        <p>Multi-container WordPress/MySQL/phpMyAdmin with docker-compose, local-to-production workflows, container orchestration basics, cloud (AWS EC2, Linode) deployment.</p>
+        <h3>Docker & cloud deploy</h3>
+        <p>Multi-container WordPress/MySQL/phpMyAdmin with docker-compose, local-to-production workflows, AWS EC2, Linode deployment.</p>
       </div>
       <div class="expert-card">
-        <h3>☁️ nextcloud & self‑hosting</h3>
-        <p>Turnkey Nextcloud setup on Linux: secure user management, external storage, performance tuning, redis cache, collabora online, and automated backups.</p>
+        <h3>Nextcloud & self‑hosting</h3>
+        <p>Turnkey Nextcloud setup on Linux: user management, external storage, redis cache, Collabora, automated backups.</p>
       </div>
       <div class="expert-card">
-        <h3>⚡ performance & scale</h3>
-        <p>Database query optimisation, object cache (Redis), lazy loading, CDN (Cloudflare), asset minification, achieving 40%+ faster load times and 95+ pagespeed scores.</p>
+        <h3>Performance & scale</h3>
+        <p>Database optimisation, object cache (Redis), lazy loading, CDN, asset minification – 40%+ faster loads, 95+ pagespeed.</p>
       </div>
       <div class="expert-card">
-        <h3>📊 ERP & automation</h3>
-        <p>Designed custom business automation plugins: invoicing, bulk WhatsApp/SMS alerts, birthday/reminder crons, reducing manual workload by half for SMEs.</p>
+        <h3>ERP & automation</h3>
+        <p>Business automation plugins: invoicing, bulk WhatsApp/SMS alerts, birthday/reminder crons. Manual workload reduced by half.</p>
       </div>
       <div class="expert-card">
-        <h3>🔐 security & hardening</h3>
-        <p>WordPress security: file permissions, disable xmlrpc, WP config hardening, Sucuri-style auditing, cloud firewall rules, and linux kernel hardening.</p>
+        <h3>Security hardening</h3>
+        <p>WordPress security: file permissions, xmlrpc disable, WP config hardening, auditing, cloud firewall rules, linux kernel.</p>
       </div>
     </div>
 
-    <!-- Selected projects (full detail) -->
-    <div class="section-title">📌 flagship projects</div>
+    <!-- projects (no icons) -->
+    <div class="section-title">Flagship projects</div>
     <div class="project-list">
       <div class="project-card">
-        <h3>🏥 hospital management system (PHP/MySQL)</h3>
-        <p>Built a modular system handling patient records (5k+), pharmacy automation, and billing. Reduced stock errors by 80%, integrated SMS alerts for low inventory and appointments. Role‑based dashboards for doctors, staff, and admins.</p>
+        <h3>Hospital management system (PHP/MySQL)</h3>
+        <p>Modular system handling 5k+ patient records, pharmacy automation, billing. Reduced stock errors by 80%, integrated SMS alerts for low inventory and appointments. Role dashboards for doctors, staff, admins.</p>
       </div>
       <div class="project-card">
-        <h3>📘 student information system (scalable backend)</h3>
-        <p>Developed for 1,000+ students: performance dashboards, grade tracking, automated report generation, parent communication portal. Optimized queries reduced page load by 60%.</p>
+        <h3>Student information system – scalable backend</h3>
+        <p>Developed for 1,000+ students: performance dashboards, grade tracking, automated report generation, parent portal. Query optimisation reduced page load 60%.</p>
       </div>
       <div class="project-card">
-        <h3>🧾 custom ERP plugin (WordPress + react)</h3>
-        <p>Complete business workflow suite: dynamic invoicing, purchase orders, vendor management, bulk WhatsApp notifications, birthday automations. Cut manual entry work by 50% for a distribution company.</p>
+        <h3>Custom ERP plugin (WordPress + React)</h3>
+        <p>Complete workflow suite: dynamic invoicing, purchase orders, vendor management, bulk WhatsApp, birthday automations. Cut manual entry 50% for distribution company.</p>
       </div>
       <div class="project-card">
-        <h3>🚀 WooCommerce high‑conversion flows</h3>
-        <p>Developed conditional pricing, custom thank-you pages, product addon fields, and abandoned cart recovery (webhook + SMS). Increased average order value by 22%.</p>
+        <h3>WooCommerce high‑conversion flows</h3>
+        <p>Conditional pricing, custom thank-you pages, product addon fields, abandoned cart recovery (webhook + SMS). Average order value +22%.</p>
       </div>
       <div class="project-card">
-        <h3>🗄️ dockerized nextcloud + collabora</h3>
-        <p>Full containerized deployment with automated backups, reverse proxy (nginx), and redis. Used by a design studio for secure internal file collaboration.</p>
+        <h3>Dockerized Nextcloud + Collabora</h3>
+        <p>Containerized deployment with automated backups, nginx reverse proxy, redis. Used by design studio for internal file collaboration.</p>
       </div>
       <div class="project-card">
-        <h3>⚙️ linux automation scripts</h3>
-        <p>Collection of bash scripts for server initialization, LEMP stack install, WP-CLI automation, and daily security audits — used in 10+ production servers.</p>
+        <h3>Linux automation scripts</h3>
+        <p>Bash scripts for server initialization, LEMP stack, WP-CLI automation, daily security audits – used in 10+ production servers.</p>
       </div>
     </div>
 
-    <!-- footer with all links / contact / seo-->
+    <!-- footer (no icon except email safe) -->
     <footer class="footer-block">
       <div class="contact">
-        📧 <a href="mailto:vashuvishwas2023@gmail.com">vashuvishwas2023@gmail.com</a>
+        <a href="mailto:vashuvishwas2023@gmail.com">vashuvishwas2023@gmail.com</a>
       </div>
       <div class="footer-links">
-        <a href="https://profiles.wordpress.org/vashudevvishwas/" target="_blank" rel="noopener">wordpress.org profile</a>
-        <a href="#" target="_blank">github (vashudev)</a>
+        <a href="https://profiles.wordpress.org/vashudevvishwas/" target="_blank" rel="noopener">wordpress.org</a>
+        <a href="#" target="_blank">github</a>
         <a href="#" target="_blank">linkedin</a>
       </div>
       <div class="copyright">
@@ -300,7 +314,7 @@
     </footer>
   </div>
 
-  <!-- enhanced typing effect with all roles (including cloud, linux, nextcloud) -->
+  <!-- typing script – clean roles, no icons -->
   <script>
     (function() {
       const roles = [
@@ -314,50 +328,40 @@
         "Self‑hosting & Security Advocate"
       ];
 
-      let i = 0;
-      let j = 0;
-      let current = "";
-      let isDeleting = false;
-      const typingElement = document.getElementById("typing");
+      let i = 0, j = 0, isDeleting = false;
+      const el = document.getElementById('typing');
 
       function type() {
-        if (!typingElement) return;
+        if (!el) return;
 
         if (!isDeleting && j <= roles[i].length) {
-          current = roles[i].substring(0, j++);
-          typingElement.innerHTML = current;
-        }
-        if (isDeleting && j >= 0) {
-          current = roles[i].substring(0, j--);
-          typingElement.innerHTML = current;
+          el.innerHTML = roles[i].substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+          el.innerHTML = roles[i].substring(0, j--);
         }
 
         if (j === roles[i].length) {
           isDeleting = true;
-          setTimeout(type, 1300);  // pause before delete
+          setTimeout(type, 1300);
           return;
         }
         if (isDeleting && j === 0) {
           isDeleting = false;
-          i = (i + 1) % roles.length; // cycle forever
+          i = (i + 1) % roles.length;
         }
 
-        const speed = isDeleting ? 50 : 85;
-        setTimeout(type, speed);
+        setTimeout(type, isDeleting ? 50 : 85);
       }
-
-      // start the loop
       type();
     })();
   </script>
 
-  <!-- small SEO + micro data hint (invisible but semantic) -->
+  <!-- micro structured data (invisible) -->
   <div style="display: none;" itemscope itemtype="https://schema.org/Person">
     <span itemprop="name">Vashudev Vishwas</span>
     <span itemprop="jobTitle">WordPress Plugin Developer & Cloud Engineer</span>
     <span itemprop="email">vashuvishwas2023@gmail.com</span>
-    <span itemprop="description">3+ years experience in custom WordPress plugins, WooCommerce, Linux Ubuntu, Docker, Nextcloud, and scalable cloud infrastructure.</span>
-    <span itemprop="knowsAbout">PHP, MySQL, Linux Server, Docker, Nextcloud, AWS, ERP systems, WooCommerce, Plugin Development</span>
+    <span itemprop="description">3+ years experience custom WordPress plugins, WooCommerce, Linux, Docker, Nextcloud</span>
   </div>
 </body>
 </html>
